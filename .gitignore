@@ -20,3 +20,19 @@ saves/remote-spleef/session\.lock
 saves/remote-spleef/stats/
 
 usercache\.json
+
+saves/remote-spleef/data/scoreboard\.dat
+
+screenshots/
+
+logs/
+
+saves/remote-spleef/region/r\.-1\.-1\.mca
+
+saves/remote-spleef/region/r\.-1\.0\.mca
+
+saves/remote-spleef/region/r\.0\.-1\.mca
+
+*.sublime-workspace
+
+saves/remote-spleef/mcedit_waypoints\.dat
