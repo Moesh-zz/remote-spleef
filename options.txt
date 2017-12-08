@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.0
+gamma:0.75
 saturation:0.0
 renderDistance:12
 guiScale:0
@@ -49,7 +49,7 @@ attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
-autoJump:true
+autoJump:false
 narrator:0
 tutorialStep:movement
 key_key.attack:-100
@@ -71,7 +71,7 @@ key_key.screenshot:60
 key_key.togglePerspective:63
 key_key.smoothCamera:0
 key_key.fullscreen:87
-key_key.spectatorOutlines:0
+key_key.spectatorOutlines:-97
 key_key.swapHands:33
 key_key.saveToolbarActivator:46
 key_key.loadToolbarActivator:45
@@ -86,7 +86,7 @@ key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
 soundCategory_master:1.0
-soundCategory_music:1.0
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
