@@ -1,4 +1,7 @@
-particle reddust 81 9 145 3.5 0.5 3.5 0.002 75
+particle reddust 87 9.75 151 3.5 0.5 3.5 0.002 75
+particle reddust 87 9.75 215 3.5 0.5 3.5 0.002 75
+particle reddust 151 9.75 151 3.5 0.5 3.5 0.002 75
+particle reddust 151 9.75 215 3.5 0.5 3.5 0.002 75
 
 # These were originally in command and conditional command blocks. We'll use stats and SuccessCount to instead 
 # check to see if an entity has successfully executed a command. Anytime a command is successfully run from
