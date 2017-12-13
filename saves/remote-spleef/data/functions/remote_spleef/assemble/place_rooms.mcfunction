@@ -8,10 +8,10 @@ setblock 81 3 143 minecraft:stone
 setblock 145 3 143 minecraft:redstone_block
 setblock 145 3 143 minecraft:stone
 
-# Green (room 4)
+# Green (room 3)
 setblock 145 3 207 minecraft:redstone_block
 setblock 145 3 207 minecraft:stone
 
-# Yellow (room 3)
+# Yellow (room 4)
 setblock 81 3 207 minecraft:redstone_block
 setblock 81 3 207 minecraft:stone
