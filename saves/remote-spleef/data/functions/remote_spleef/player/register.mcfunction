@@ -7,11 +7,11 @@ xp -99999 @a[tag=!Registered]
 xp -99999L @a[tag=!Registered]
 
 # Register players on required scoreboards
-	# This effect registers players on the health scoreboard, allowing us to track health easily.
-	effect @a[tag=!Registered] minecraft:absorption 3 4 true
-
-	#stats entity @a[tag=!Registered] set AffectedItems @p[c=1] AffectedItems
-	#scoreboard players add @a[tag=!Registered] AffectedItems 0
+# This effect registers players on the health scoreboard, allowing us to track health easily.
+effect @a[tag=!Registered] minecraft:absorption 3 4 true
+# Used to poll player inventory
+stats entity @a[tag=!Registered] set AffectedItems @s AffectedItems
+scoreboard players add @a[tag=!Registered] AffectedItems 0
 
 # We have a world spawn point, now let's move the player to the lobby spawn point
 tp @a[tag=!Registered] 120 9 170
