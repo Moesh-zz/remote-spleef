@@ -4,6 +4,8 @@
 # requirement, but reduces the amount of region files we need from four to one, saving ~6mbs.
 setworldspawn 136 3 136
 gamerule spawnRadius 7
+gamerule announceAdvancements false
+gamerule spectatorsGenerateChunks false
 
 # Remove objectives
 scoreboard objectives remove CONST
@@ -19,6 +21,7 @@ scoreboard objectives remove SuccessCount
 # Add objectives
 scoreboard objectives add CONST dummy
 	scoreboard players set TWENTY CONST 20
+	scoreboard players set SIXTY CONST 60
 scoreboard objectives add AffectedBlocks dummy
 scoreboard objectives add AffectedItems dummy
 scoreboard objectives add forbiddenBlocks dummy
