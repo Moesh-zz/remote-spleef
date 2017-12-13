@@ -18,6 +18,7 @@ scoreboard objectives remove SuccessCount
 
 # Add objectives
 scoreboard objectives add CONST dummy
+	scoreboard players set TWENTY CONST 20
 scoreboard objectives add AffectedBlocks dummy
 scoreboard objectives add AffectedItems dummy
 scoreboard objectives add forbiddenBlocks dummy
@@ -29,7 +30,8 @@ scoreboard objectives add SuccessCount dummy
 
 # Remove all entities, resummon entity markers
 kill @e[type=area_effect_cloud]
-summon minecraft:area_effect_cloud 96.5 4.0 80.5 {CustomName:"AssemblyArea", CustomNameVisible:1b, Duration:2147483647}
+summon minecraft:area_effect_cloud 96.5 4.0 80.5 {CustomName:"Main", CustomNameVisible:1b, Duration:2147483647}
+
 summon minecraft:area_effect_cloud 97.5 5.0 126.5 {CustomName:"remove_proxies", CustomNameVisible:1b, Duration:2147483647}
 summon minecraft:area_effect_cloud 110.5 5.0 113.5 {CustomName:"RoomRed_proxies", CustomNameVisible:1b, Duration:2147483647}
 summon minecraft:area_effect_cloud 110.5 5.0 115.5 {CustomName:"kill_RoomBlue_proxies", CustomNameVisible:1b, Duration:2147483647}
