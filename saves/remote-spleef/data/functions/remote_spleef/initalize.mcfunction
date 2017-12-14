@@ -1,9 +1,12 @@
-	# This file is run by the map maker to reinitalize the map.
+# This file is run by the map maker to reinitalize the map.
 
-# These two commands move the world spawn point to a single region file. This isn't technical
+# These commands move the world spawn point to a single region file. This isn't technical
 # requirement, but reduces the amount of region files we need from four to one, saving ~6mbs.
+# Also, gamerule spawnRadius 7 sets the spawn area to a single chunk, marked with red in the world.
 setworldspawn 136 3 136
 gamerule spawnRadius 7
+
+# Set gamerules
 gamerule announceAdvancements false
 gamerule spectatorsGenerateChunks false
 
