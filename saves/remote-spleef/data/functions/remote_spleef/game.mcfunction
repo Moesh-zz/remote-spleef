@@ -1,0 +1,5 @@
+function remote_spleef:forbidden_area
+function remote_spleef:global_item_timer
+function remote_spleef:store_blocks
+function remote_spleef:place_rooms
+function remote_spleef:place_spectator
