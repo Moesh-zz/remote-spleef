@@ -20,13 +20,14 @@ title @a[tag=PlacedForbiddenBlock] title {"text":""}
 scoreboard players tag @a[tag=PlacedForbiddenBlock] add NeedsInstantDamage
 scoreboard players tag @a[tag=PlacedForbiddenBlock] remove PlacedForbiddenBlock
 
-# Check to see if player has remained in forbidden area for 10 ticks
+# Check to see if player has remained in forbidden area for 12 ticks
 execute @e[type=area_effect_cloud,tag=Room] ~ ~-4 ~ execute @a[tag=Playing,dx=13,dy=1,dz=13,tag=!InForbiddenArea] ~ ~ ~ scoreboard players tag @s[tag=!StartForbiddenCountdown] add StartForbiddenCountdown
 scoreboard players set @a[tag=StartForbiddenCountdown] SafetyCountdown 11
 scoreboard players tag @a[tag=StartForbiddenCountdown] add InForbiddenArea
 scoreboard players tag @a[tag=StartForbiddenCountdown] remove StartForbiddenCountdown
 # Check to see if the player was only in forbidden area briefly
 execute @e[type=area_effect_cloud,tag=Room] ~ ~-4 ~ testfor @a[tag=Playing,dx=13,dy=1,dz=13]
+# If not, remove StartForbiddenCountdown and InForbiddenArea tags
 execute @e[type=area_effect_cloud,name=RoomRed,score_SuccessCount=0] ~ ~ ~ scoreboard players tag @a[team=red] remove StartForbiddenCountdown
 execute @e[type=area_effect_cloud,name=RoomBlue,score_SuccessCount=0] ~ ~ ~ scoreboard players tag @a[team=blue] remove StartForbiddenCountdown
 execute @e[type=area_effect_cloud,name=RoomGreen,score_SuccessCount=0] ~ ~ ~ scoreboard players tag @a[team=green] remove StartForbiddenCountdown
