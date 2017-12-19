@@ -12,6 +12,8 @@ effect @a[tag=!Registered] minecraft:absorption 3 4 true
 # Used to poll player inventory
 stats entity @a[tag=!Registered] set AffectedItems @s AffectedItems
 scoreboard players add @a[tag=!Registered] AffectedItems 0
+stats entity @a[tag=!Registered] set AffectedBlocks @s AffectedBlocks
+scoreboard players add @a[tag=!Registered] AffectedBlocks 0
 
 # Give needed effects
 effect @a[tag=!Registered] minecraft:night_vision 999999 0 true
