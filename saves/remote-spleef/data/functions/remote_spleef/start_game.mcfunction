@@ -9,7 +9,6 @@ fill 113 4 177 126 12 190 minecraft:air
 # Clear all rooms of blocks
 execute @e[type=area_effect_cloud,tag=Room] ~ ~-9 ~ fill ~ ~ ~ ~13 ~6 ~13 minecraft:air
 
-
 function remote_spleef:spawn_proxies
 
 tp @a[team=red] 158 4 145 45 0
@@ -17,7 +16,9 @@ tp @a[team=blue] 81 4 145 -45 0
 tp @a[team=green] 158 4 222 135 0
 tp @a[team=yellow] 81 4 222 -135 0
 
-scoreboard players tag @a[team=!] add Playing
+# Make sure players get blocks immediately upon starting the game, instead of 5 seconds after.
+scoreboard players set EveryFiveSeconds gameTime 0
 
+scoreboard players tag @a[team=!] add Playing
 scoreboard players tag @e[type=area_effect_cloud,name=Main] add GameInProgress
 scoreboard players tag @e[type=area_effect_cloud,name=Main] remove StartGame
