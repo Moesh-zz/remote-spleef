@@ -1,0 +1,7 @@
+function remote_spleef:forbidden_area
+function remote_spleef:global_item_timer
+function remote_spleef:player/is_player_stuck
+function remote_spleef:assemble/store_blocks
+function remote_spleef:assemble/place_rooms
+function remote_spleef:assemble/place_spectator
+function remote_spleef:update_proxies
