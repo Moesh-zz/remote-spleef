@@ -13,7 +13,13 @@ effect @a[tag=!Registered] minecraft:absorption 3 4 true
 stats entity @a[tag=!Registered] set AffectedItems @s AffectedItems
 scoreboard players add @a[tag=!Registered] AffectedItems 0
 
-# We have a world spawn point, now let's move the player to the lobby spawn point
+# Give needed effects
+effect @a[tag=!Registered] minecraft:night_vision 999999 0 true
+effect @a[tag=!Registered] minecraft:weakness 999999 100 true
+#effect @a[tag=!Registered] minecraft:saturation 999999 100 true
+
+gamemode adventure @a[tag=!Registered] 
+
 tp @a[tag=!Registered] 120 9 170
 spawnpoint @a[tag=!Registered] 120 9 170
 
