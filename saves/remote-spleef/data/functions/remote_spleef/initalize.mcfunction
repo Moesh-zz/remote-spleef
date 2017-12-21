@@ -9,6 +9,7 @@ gamerule spawnRadius 7
 # Set gamerules
 gamerule announceAdvancements false
 gamerule spectatorsGenerateChunks false
+gamerule naturalRegeneration false
 
 # Remove objectives
 scoreboard objectives remove CONST
