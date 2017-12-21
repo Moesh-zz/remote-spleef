@@ -22,6 +22,7 @@ scoreboard objectives remove loggedOff
 scoreboard objectives remove QueryResult
 scoreboard objectives remove SuccessCount
 scoreboard objectives remove SafetyCountdown
+scoreboard objectives remove food
 
 # Add objectives
 scoreboard objectives add CONST dummy
@@ -39,6 +40,21 @@ scoreboard objectives add loggedOff stat.leaveGame
 scoreboard objectives add QueryResult dummy
 scoreboard objectives add SuccessCount dummy
 scoreboard objectives add SafetyCountdown dummy
+scoreboard objectives add food food
+
+# Remove all tags from all players and entities
+scoreboard players tag * remove ApplyEffects
+scoreboard players tag * remove Dead
+scoreboard players tag * remove EndGame
+scoreboard players tag * remove GameInProgress
+scoreboard players tag * remove Playing
+scoreboard players tag * remove Registered
+scoreboard players tag * remove StartGame
+scoreboard players tag * remove Suffocate
+scoreboard players tag * remove CannotMove
+scoreboard players tag * remove NeedsInstantDamage
+scoreboard players tag * remove PlacedForbiddenBlock
+scoreboard players tag * remove Refill
 
 # Remove all entities, resummon entity markers
 kill @e[type=!player]
