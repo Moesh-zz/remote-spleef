@@ -5,3 +5,4 @@ function remote_spleef:assemble/store_blocks
 function remote_spleef:assemble/place_rooms
 function remote_spleef:assemble/place_spectator
 function remote_spleef:update_proxies
+function remote_spleef:music_loop

@@ -23,6 +23,7 @@ scoreboard objectives remove QueryResult
 scoreboard objectives remove SuccessCount
 scoreboard objectives remove SafetyCountdown
 scoreboard objectives remove food
+scoreboard objectives remove LoopMusic
 
 # Add objectives
 scoreboard objectives add CONST dummy
@@ -41,6 +42,7 @@ scoreboard objectives add QueryResult dummy
 scoreboard objectives add SuccessCount dummy
 scoreboard objectives add SafetyCountdown dummy
 scoreboard objectives add food food
+scoreboard objectives add LoopMusic dummy
 
 # Remove all tags from all players and entities
 scoreboard players tag * remove ApplyEffects
@@ -61,6 +63,7 @@ kill @e[type=!player]
 summon minecraft:area_effect_cloud 96.5 4.0 80.5 {CustomName:"Main", CustomNameVisible:1b, Duration:2147483647}
 	stats entity @e[type=area_effect_cloud,name=Main] set SuccessCount @s SuccessCount
 	scoreboard players set @e[type=area_effect_cloud,name=Main] SuccessCount 0
+	scoreboard players set @e[type=area_effect_cloud,name=Main] LoopMusic 0
 
 # Each play room needs an entity for ease of use in forbidden_area.mcfunction
 summon minecraft:area_effect_cloud 145.5 13.0 145.5 {CustomName:"RoomRed", CustomNameVisible:1b, Duration:2147483647, Tags:["Room"]}

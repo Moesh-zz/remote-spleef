@@ -19,10 +19,11 @@ tp @a[team=yellow] 81 4 222 -135 0
 
 scoreboard players tag @a[team=!] add Playing
 
-effect @a[tag=Playng] minecraft:regeneration 0
-effect @a[tag=Playng] minecraft:resistance 0
+effect @a[tag=Playing] minecraft:regeneration 0
+effect @a[tag=Playing] minecraft:resistance 0
 # Make sure players get blocks immediately upon starting the game, instead of 5 seconds after.
 scoreboard players set EveryFiveSeconds gameTime 0
+scoreboard players set @e[type=area_effect_cloud,name=Main] LoopMusic 0
 
 scoreboard players tag @e[type=area_effect_cloud,name=Main] add GameInProgress
 scoreboard players tag @e[type=area_effect_cloud,name=Main] remove StartGame

@@ -1,0 +1,8 @@
+{
+	"gamemusicloop": {
+		"type":"master",
+		"sounds": [
+			"music/tonicpatternloop"
+		]
+	}
+}
