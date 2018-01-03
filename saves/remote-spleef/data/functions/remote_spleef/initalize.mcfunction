@@ -24,6 +24,7 @@ scoreboard objectives remove SuccessCount
 scoreboard objectives remove SafetyCountdown
 scoreboard objectives remove food
 scoreboard objectives remove LoopMusic
+scoreboard objectives remove display
 
 # Add objectives
 scoreboard objectives add CONST dummy
@@ -43,6 +44,8 @@ scoreboard objectives add SuccessCount dummy
 scoreboard objectives add SafetyCountdown dummy
 scoreboard objectives add food food
 scoreboard objectives add LoopMusic dummy
+scoreboard objectives add display dummy Remote Anti-Spleef
+	scoreboard objectives setdisplay sidebar display
 
 # Remove all tags from all players and entities
 scoreboard players tag * remove ApplyEffects
@@ -57,6 +60,22 @@ scoreboard players tag * remove CannotMove
 scoreboard players tag * remove NeedsInstantDamage
 scoreboard players tag * remove PlacedForbiddenBlock
 scoreboard players tag * remove Refill
+
+# Remove teams
+scoreboard teams remove red
+scoreboard teams remove blue
+scoreboard teams remove green
+scoreboard teams remove yellow
+
+# Add teams
+scoreboard teams add red Red
+scoreboard teams add blue Blue
+scoreboard teams add green Green
+scoreboard teams add yellow Yellow
+	scoreboard teams option red color red
+	scoreboard teams option blue color blue
+	scoreboard teams option green color green
+	scoreboard teams option yellow color yellow
 
 # Remove all entities, resummon entity markers
 kill @e[type=!player]
